@@ -9,9 +9,10 @@
 
 .header-container {
     display: flex;
+    position: relative;
     width: 100%;
     flex-wrap: wrap;
-    align-items: center;
+    align-items: flex-start;
     background-color: #bbe7fb;
     padding: 20px;
     box-sizing: border-box;
@@ -19,24 +20,80 @@
 
 .photo {
     display: flex;
-    width: 35%;
+    width: 30%;
     min-width: 220px;
     box-sizing: border-box;
     justify-content: center;
     align-items: center;
     padding: 10px;
+    box-sizing: border-box;
+}
+
+.info {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    gap: 15px;
+    width: calc(70%-20px);
+    box-sizing: border-box;
+}
+
+.navbar {
+    display: flex;
+    z-index: 1000;
+    padding: 10px 20px;
+    background-color: #ffffff;
+    justify-content: center;
+    box-sizing: border-box;
+    border-radius: 30px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    width: 100%;
+}
+
+.navigation-menu {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.navigation-menu li {
+    flex: 1;
+    text-align: center;
+}
+
+.navbar ul li {
+    box-sizing: border-box;
+    padding: 10px 15px;
+}
+
+.navbar ul li a {
+    display: block;
+    width: 100%;
+    text-decoration: none;
+    color: #000000;
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.navbar ul li a:hover {
+    text-decoration: underline;
 }
 
 .name {
-    flex-grow: 1;
     min-width: 200px;
-    padding: 10px;
+    padding: 10px 20px;
     box-sizing: border-box;
     text-align: center;
 }
 
 .profile-photo {
-    width: 200px; height: 200px;
+    width: 200px; 
+    height: 200px;
     overflow: hidden;
     display: flex;
     justify-content: center;
@@ -57,14 +114,31 @@
         align-items: center;
         text-align: center;
     }
+    
+    .navbar {
+        justify-content: center;
+        border-radius: 0;
+        box-shadow: none;
+        padding: 10px 0;
+    }
 
-    .photo, .name {
-        width: 100% !important;
+    .navigation-menu {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .photo, .info {
+        width: 100%;
         min-width: unset;
         padding: 10px 0;
     }
 
     .profile-photo {
         margin: 0 auto 20px auto;
+    }
+
+    .name {
+        padding: 10px 0;
     }
 }
