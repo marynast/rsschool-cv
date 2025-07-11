@@ -38,6 +38,7 @@ September 2018 – July 2020 – “Intouch Health” - QA Engineer
 September 2017 – September 2018 - “IntellectSoft Bel” - QA Engineer  
 October 2015 - August 2017 - “Octonion Technology” - Customer Support Team Lead  
 ## Education ##
+
 2021 – Automation Testing (RobotFramework), “TeladocHeatlth” training  
 Aug 2020–Jan 2021 - Automation Testing (Java), “TeachMeSkills”  
 2018 - JavaScript Automation Testing, “IntellectSoft Bel” training  
