@@ -126,7 +126,7 @@
 .main-left {
     display: flex;
     width: 420px;
-    min-width: 220px;
+    min-width: 420px;
     box-sizing: border-box;
     flex-direction: column;
     justify-content: start;
@@ -161,6 +161,28 @@
     margin-bottom: 15px;
 }
 
+.section-title-main {
+    display: flex;
+    justify-content: start;
+    align-items: flex-start;
+}
+
+.experience-item, .education-item {
+    display: flex;
+    gap: 8px;
+    display: flex;
+    justify-content: stretch;
+    align-items: center;
+}
+
+.company-name {
+    font-weight: 600;
+}
+
+.date {
+    color: #323232ab;
+    font-size: 0.9rem;
+}
 
 @media (max-width: 768px) {
     .header-container, .main-container {
