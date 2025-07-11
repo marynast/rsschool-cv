@@ -15,7 +15,7 @@
     width: 100%;
     flex-wrap: nowrap;
     align-items: flex-start;
-    background-color: #bbe7fb;
+    background-color: #a1ced8;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -84,7 +84,7 @@
     font-size: 1rem;
 }
 
-.navbar ul li a:hover {
+.navbar ul li a:hover, ul li a:hover, ol li a:hover {
     text-decoration: underline;
 }
 
@@ -144,8 +144,9 @@
     flex-grow: 1;
     flex-direction: column;
     gap: 15px;
-    width: calc(70%-20px);
+    width: calc(70% - 20px);
     box-sizing: border-box;
+    line-height: 1.8;
 }
 
 .section-title {
@@ -201,12 +202,17 @@
     margin: 20px 0;
 }
 
+.education {
+    margin-bottom: 32px;
+}
+
 .code-example pre {
     margin: 0;
 }
 
 .link {
     color: #000000;
+    text-decoration: none;
 }
 
 .link:visited {
@@ -223,7 +229,9 @@
     justify-content: space-around;
     align-items: start;
     list-style-type: none;
-    background-color:#d2e4e6
+    background-color:#d2e4e6;
+    margin: 0px auto;
+    padding: 16px;
 }
 
 
